@@ -1,0 +1,105 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : interpolation
+Version: U-2022.12
+Date   : Fri Jun 14 06:02:39 2024
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: SH_r_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: bilinear_2_r_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  interpolation      tsmc13_wl10           slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  SH_r_reg[0]/CK (DFFRX1)                                 0.00       1.00 r
+  SH_r_reg[0]/Q (DFFRX1)                                  0.49       1.49 f
+  U755/Y (NOR2X1)                                         0.35       1.84 r
+  U753/Y (NAND2X1)                                        0.24       2.08 f
+  U752/Y (OAI21XL)                                        0.34       2.41 r
+  mult_216/b[2] (interpolation_DW_mult_uns_0)             0.00       2.41 r
+  mult_216/U52/Y (CLKINVX1)                               0.40       2.81 f
+  mult_216/U72/Y (NOR2X1)                                 0.21       3.02 r
+  mult_216/U14/S (ADDHXL)                                 0.29       3.30 r
+  mult_216/U6/CO (ADDFXL)                                 0.56       3.86 r
+  mult_216/U51/CO (ADDFX1)                                0.23       4.09 r
+  mult_216/U50/CO (ADDFX2)                                0.19       4.28 r
+  mult_216/U49/CO (ADDFX1)                                0.20       4.48 r
+  mult_216/U48/CO (ADDFX2)                                0.25       4.73 r
+  mult_216/product[8] (interpolation_DW_mult_uns_0)       0.00       4.73 r
+  U833/Y (OR2X1)                                          0.14       4.87 r
+  U411/Y (OR4XL)                                          0.35       5.22 r
+  U832/Y (NOR2BX1)                                        0.12       5.34 f
+  U830/Y (AND4X1)                                         0.33       5.66 f
+  U827/Y (NOR2X1)                                         0.28       5.94 r
+  U826/Y (CLKINVX1)                                       0.22       6.17 f
+  U505/Y (OAI31XL)                                        0.37       6.54 r
+  U504/Y (CLKBUFX3)                                       0.30       6.84 r
+  U746/Y (CLKINVX1)                                       0.19       7.03 f
+  U479/Y (NAND2X2)                                        0.31       7.34 r
+  U737/Y (AO22X1)                                         0.47       7.80 r
+  U478/Y (CLKINVX1)                                       0.22       8.02 f
+  U558/Y (AND2X1)                                         0.25       8.27 f
+  U557/Y (XOR2X1)                                         0.47       8.74 r
+  mult_392/b[2] (interpolation_DW_mult_uns_2)             0.00       8.74 r
+  mult_392/U206/CO (ADDFXL)                               0.59       9.32 r
+  mult_392/U205/CO (ADDFXL)                               0.30       9.63 r
+  mult_392/U204/CO (ADDFXL)                               0.30       9.93 r
+  mult_392/U203/CO (ADDFXL)                               0.30      10.23 r
+  mult_392/U202/CO (ADDFXL)                               0.30      10.53 r
+  mult_392/U201/CO (ADDFXL)                               0.30      10.83 r
+  mult_392/U200/S (ADDFXL)                                0.50      11.33 r
+  mult_392/U221/Y (CLKINVX1)                              0.19      11.51 f
+  mult_392/U345/Y (OAI22XL)                               0.27      11.79 r
+  mult_392/U344/Y (AOI221XL)                              0.16      11.94 f
+  mult_392/U343/Y (XOR2X1)                                0.21      12.15 r
+  mult_392/U10/CO (ADDFXL)                                0.50      12.65 r
+  mult_392/U9/CO (ADDFXL)                                 0.30      12.95 r
+  mult_392/U8/CO (ADDFXL)                                 0.30      13.25 r
+  mult_392/U7/CO (ADDFXL)                                 0.30      13.55 r
+  mult_392/U6/CO (ADDFXL)                                 0.30      13.85 r
+  mult_392/U5/CO (ADDFXL)                                 0.30      14.15 r
+  mult_392/U4/CO (ADDFXL)                                 0.30      14.45 r
+  mult_392/U3/CO (ADDFXL)                                 0.30      14.75 r
+  mult_392/U265/Y (XOR2X1)                                0.20      14.95 r
+  mult_392/U264/Y (XOR2X1)                                0.18      15.13 r
+  mult_392/product[16] (interpolation_DW_mult_uns_2)      0.00      15.13 r
+  add_395/B[16] (interpolation_DW01_add_4)                0.00      15.13 r
+  add_395/U1_16/S (ADDFXL)                                0.59      15.73 f
+  add_395/SUM[16] (interpolation_DW01_add_4)              0.00      15.73 f
+  U815/Y (NOR3X1)                                         0.22      15.95 r
+  U814/Y (NAND2X1)                                        0.16      16.11 f
+  U389/Y (NAND2BX2)                                       0.29      16.40 r
+  U729/Y (OAI221XL)                                       0.19      16.59 f
+  bilinear_2_r_reg[0]/D (DFFRX1)                          0.00      16.59 f
+  data arrival time                                                 16.59
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             1.00      21.00
+  clock uncertainty                                      -0.10      20.90
+  bilinear_2_r_reg[0]/CK (DFFRX1)                         0.00      20.90 r
+  library setup time                                     -0.11      20.79
+  data required time                                                20.79
+  --------------------------------------------------------------------------
+  data required time                                                20.79
+  data arrival time                                                -16.59
+  --------------------------------------------------------------------------
+  slack (MET)                                                        4.20
+
+
