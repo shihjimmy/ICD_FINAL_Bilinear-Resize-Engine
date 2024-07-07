@@ -3,6 +3,9 @@
 > By the benefit from my good hardware structure, my performance still can rank 8th place of 46 teams.  
 > Please check out the pdf to get more information about this project.  
 
+## Implementation Details
+I only use 4 DFFs to handle all the situation of resizing, which can largely reduce my circuit area.
+
 ## Final layout of the circuit
 ![layout](03_APR/apr.png)
 
@@ -16,11 +19,7 @@ Design a Bilinear Resize Engine circuit to enlarge a selected 2D matrix to the r
 ## 2. Design Specifications
 
 ### 2.1 System Block Diagram
-<<<<<<< HEAD
 ![System Block Diagram](system_block.png)
-=======
-![System Block Diagram](path/to/image.png)
->>>>>>> origin/main
 - **Inputs:**
   - CLK
   - RST
@@ -62,28 +61,9 @@ To interpolate a point in the enlarged image, corresponding points in the origin
 
 ### 2.3.3 1D Interpolation
 Linear interpolation formula:
-\[ p(x) = p(0) + x \cdot (p(1) - p(0)) \]
+If we know p(1) and p(0), we want to find out p(x) (0<= x <=1)   
+[ p(x) = p(0) + x * ( p(1)-p(0) ) ]
 
 ### 2.3.4 2D Bilinear Interpolation
 Bilinear interpolation uses four points (a, b, c, d) around the target point to calculate the interpolated value. The process involves two stages of 1D linear interpolation.
-
-<<<<<<< HEAD
 ![Bilinear Interpolation Diagram](interpolation.png)
-=======
-![Bilinear Interpolation Diagram](path/to/image.png)
->>>>>>> origin/main
-
-## 3. Implementation Details
-Details on the implementation of the Bilinear Resize Engine, including the handling of edge cases, optimization techniques, and testbench results, can be added here.
-
-### 3.1 Key Considerations
-- Precision and accuracy of interpolation
-- Timing and synchronization with the system clock
-- Handling of boundary conditions
-
-## 4. Testbench and Validation
-Provide a detailed description of the testbench used for validating the Bilinear Resize Engine, including test cases and expected outcomes.
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/main
