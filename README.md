@@ -16,7 +16,11 @@ Design a Bilinear Resize Engine circuit to enlarge a selected 2D matrix to the r
 ## 2. Design Specifications
 
 ### 2.1 System Block Diagram
+<<<<<<< HEAD
 ![System Block Diagram](system_block.png)
+=======
+![System Block Diagram](path/to/image.png)
+>>>>>>> origin/main
 - **Inputs:**
   - CLK
   - RST
@@ -63,7 +67,11 @@ Linear interpolation formula:
 ### 2.3.4 2D Bilinear Interpolation
 Bilinear interpolation uses four points (a, b, c, d) around the target point to calculate the interpolated value. The process involves two stages of 1D linear interpolation.
 
+<<<<<<< HEAD
 ![Bilinear Interpolation Diagram](interpolation.png)
+=======
+![Bilinear Interpolation Diagram](path/to/image.png)
+>>>>>>> origin/main
 
 ## 3. Implementation Details
 Details on the implementation of the Bilinear Resize Engine, including the handling of edge cases, optimization techniques, and testbench results, can be added here.
@@ -75,3 +83,7 @@ Details on the implementation of the Bilinear Resize Engine, including the handl
 
 ## 4. Testbench and Validation
 Provide a detailed description of the testbench used for validating the Bilinear Resize Engine, including test cases and expected outcomes.
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/main
