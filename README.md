@@ -3,12 +3,6 @@
 > By the benefit from my good hardware structure, my performance still can rank 8th place of 46 teams.  
 > Please check out the pdf to get more information about this project.  
 
-## Implementation Details
-I only use 4 DFFs to handle all the situation of resizing, which can largely reduce my circuit area.
-
-## Final layout of the circuit
-![layout](03_APR/apr.png)
-
 ## 1. Problem Description
 Design a Bilinear Resize Engine circuit to enlarge a selected 2D matrix to the required size, commonly used for enlarging image selection areas.
 
@@ -67,3 +61,9 @@ If we know p(1) and p(0), we want to find out p(x) (0<= x <=1)
 ### 2.3.4 2D Bilinear Interpolation
 Bilinear interpolation uses four points (a, b, c, d) around the target point to calculate the interpolated value. The process involves two stages of 1D linear interpolation.
 ![Bilinear Interpolation Diagram](interpolation.png)
+
+## Implementation Details
+I only use 4 DFFs to handle all the situation of resizing, which can largely reduce my circuit area.
+
+## Final layout of the circuit
+![layout](03_APR/apr.png)
